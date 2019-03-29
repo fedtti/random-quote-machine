@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Source+Serif+Pro:400,400i");
+
+$black: #000;
+$white: #fff;
+
+*:focus {
+  outline: none;
+}
+
+body {
+  background: $black;
+  font: 400 1rem/1 "Source Sans Pro", sans-serif;
+
+  main {
+    align-items: center;
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+
+    p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    ul {
+      clear: right;
+      margin: 0;
+      padding: 1rem 0 0 0;
+
+      li {
+        list-style: none;
+
+        #tweet-quote, #new-quote {
+          cursor: pointer;
+        }
+
+        #tweet-quote {
+          float: left;
+        }
+
+        #new-quote {
+          float: right;
+        }
+      }
+    }
+
+    #quote-box {
+      background: $white;
+      border-radius: 0.5rem;
+      color: $black;
+      margin: 1rem;
+      padding: 1rem;
+
+      #text, #author {
+        font-family: "Source Serif Pro", sans-serif;
+      }
+
+      #text {
+        padding: 0 0 1rem 0;
+      }
+
+      #author {
+        color: rgba(0, 0, 0, 0.75);
+        float: right;
+
+        em {
+          font-style: italic;
+        }
+      }
+
+      #new-quote {
+
+      }
+
+      #tweet-quote {
+
+      }
+    }
+  }
+
+  footer {
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+
+    p {
+      color: $white;
+      line-height: 1.5;
+      margin: 0;
+      padding: 1rem;
+      text-transform: uppercase;
+
+      small {
+        font-size: 0.75rem;
+
+        strong {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
